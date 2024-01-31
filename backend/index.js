@@ -1,10 +1,16 @@
 // Import packages
 const express = require("express")
+const cors = require('cors');
 const home = require("./api/home")
 
 // Middlewares
 const app = express();
 app.use(express.json());
+
+app.use(cors({
+    origin: '*',
+    credentials: true,
+}));
 
 // Routes
 app.use("/api", home);
