@@ -13,7 +13,7 @@ const supabase = createClient(supabaseUrl, supabaseKey);
 app.listen(3000, () => console.log('Server has started'));
 
 app.get("/", (req, res) => {
-    res.send("Express on Vercel");
+    res.send("Backend for the OCS Test of Pulkit, send a GET request to /login with parameters username and password");
 });
 
 app.get('/login', async (req, res) => {
