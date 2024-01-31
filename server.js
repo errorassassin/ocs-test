@@ -12,6 +12,10 @@ const supabase = createClient(supabaseUrl, supabaseKey);
 
 app.listen(3000, () => console.log('Server has started'));
 
+app.get("/", (req, res) => {
+    res.send("Express on Vercel");
+});
+
 app.post('/login', async (req, res) => {
 
     const { username, password } = req.query;
