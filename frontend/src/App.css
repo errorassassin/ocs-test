@@ -1,0 +1,120 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+body {
+    height: 100%;
+    width: 100%;
+}
+#root {
+    height: 100%;
+    width: 100%;
+}
+
+.App {
+    height: 100%;
+    width: 100%;
+    background-color: #183446;
+    color: #9bdcec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'League Spartan';
+}
+
+.box {
+    min-height: 25rem;
+    width: 22rem;
+    border-radius: 3rem;
+    max-width: 90%;
+    background-color: #0090C1;
+    color: rgb(6, 46, 62);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+h1 {
+    padding: 0;
+    margin: 2rem;
+    font-size: 3.4rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 88%;
+    font-size: 1.6rem;
+    font-weight: 600;
+    gap: 0.4rem;
+    margin-top: auto;
+}
+
+input {
+    font-size: 1.2rem;
+    font-weight: 500;
+    outline: none;
+    border: none;
+    padding: 0.5rem 0.6rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1.4rem;
+    font-family: 'League Spartan';
+}
+
+button {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #053645;
+    font-family: 'League Spartan';
+    background-color: #84d0ec;
+    border-radius: 1.1rem;
+    outline: none;
+    width: fit-content;
+    align-self: center;
+    padding: 0.7rem 1.2rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 2.7rem;
+    margin-top: 0.6rem;
+    opacity: 80%;
+    transition: all 0.2s;
+}
+
+button:hover {
+    opacity: 100%;
+}
+
+.back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 1.1rem 0 0 0.9rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.1rem;
+    cursor: pointer;
+}
+
+h2 {
+    font-size: 1.9rem;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: -3px;
+}
+
+.info {
+    padding: 1.2rem;
+    margin: 2.7rem 0 0rem 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.err {
+    font-size: 2rem !important;
+    color: rgb(133, 12, 12);
+    margin: 0 !important;
+}
