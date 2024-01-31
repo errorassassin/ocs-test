@@ -8,7 +8,7 @@ const md5 = require('md5');
 
 function App() {
 
-    const [loggedIn, setLoggedIn] = useState(true);
+    const [loggedIn, setLoggedIn] = useState(false);
     const [loading, setLoading] = useState(false);
     const [info, setInfo] = useState('');
     const [status, setStatus] = useState(-1);
