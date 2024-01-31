@@ -18,7 +18,7 @@ function App() {
         setLoading(true);
         var statuss = -1
 
-        fetch(`http://localhost:9002/api/login?username=${event.target[0].value}&passwordHash=${md5(event.target[1].value)}`)
+        fetch(`https://ocs-test-pulkit-backend.vercel.app/login?username=${event.target[0].value}&passwordHash=${md5(event.target[1].value)}`)
             .then(response => {
                 statuss = response.status
                 return response.json()
