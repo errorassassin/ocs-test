@@ -44,7 +44,7 @@ app.get('/login', async (req, res) => {
                     else res.status(200).json(user)
                 }
                 else {
-                    res.status(401).json({error:"Authentication Failed"})
+                    res.status(401).json({error:"Authentication Failed (Wrong Password)"})
                 }
             }
         })
