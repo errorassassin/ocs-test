@@ -16,7 +16,7 @@ app.get("/", (req, res) => {
     res.send("Express on Vercel");
 });
 
-app.post('/login', async (req, res) => {
+app.get('/login', async (req, res) => {
 
     const { username, password } = req.query;
     if (username===undefined || password===undefined) {res.status(422).send('Incomplete Input'); return}
